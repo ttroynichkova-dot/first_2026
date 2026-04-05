@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Викторина | Физика и химия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-bar">
+    <a href="index.html" class="nav-btn">🌌 Марс & Париж</a>
+    <a href="index2.html" class="nav-btn">🌊 Океаны & горы</a>
+    <a href="index3.html" class="nav-btn active-nav">⚡ Физика & химия</a>
+    <a href="index4.html" class="nav-btn">🐘 Животные & растения</a>
+</div>
+
+<div class="page active-page">
+    <div class="quiz-container">
+        <div class="quiz-section">
+            <h2>⚛️ Точные науки</h2>
+            <hr/>
+            <h3>Какая формула выражает второй закон Ньютона?</h3>
+            <div class="options-group">
+                <button class="quiz-btn3" data-correct="false">E = mc²</button>
+                <button class="quiz-btn3" data-correct="true">F = ma</button>
+                <button class="quiz-btn3" data-correct="false">PV = nRT</button>
+                <button class="quiz-btn3" data-correct="false">V = IR</button>
+            </div>
+            <div id="feedbackPage3_mc" class="feedback-message">🧪 Выберите верную формулу</div>
+        </div>
+
+        <div class="quiz-section">
+            <h2>🧴 Химия: простое вещество</h2>
+            <hr/>
+            <h3>Какой химический элемент обозначается символом "O"?</h3>
+            <div class="open-field-group">
+                <input type="text" id="answerInput3" class="open-input" placeholder="Введите название">
+                <button id="submitBtn3" class="submit-btn">🔬 Проверить</button>
+            </div>
+            <div id="feedback2_3" class="feedback-message">⚗️ Введите элемент (по-русски)</div>
+        </div>
+    </div>
+</div>
+
+<footer>✨ 4 интерактивные страницы | Проверяйте знания в увлекательной форме</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

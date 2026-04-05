@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #f5f7fc 0%, #eef2f8 100%);
+    color: #1e2a3e;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+}
+
+/* СТРАНИЦЫ */
+.page {
+    display: block;
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* НАВИГАЦИЯ МЕЖДУ СТРАНИЦАМИ */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.nav-btn {
+    background: #2c3e66;
+    border: none;
+    padding: 0.7rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    background: #1e2b4f;
+    transform: scale(0.97);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-btn.active-nav {
+    background: #9b2c8c;
+    box-shadow: 0 4px 12px rgba(155,44,140,0.3);
+}
+
+/* СЕКЦИИ ВИКТОРИН */
+.quiz-section {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(0px);
+    border-radius: 32px;
+    padding: 1.8rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.quiz-section:hover {
+    background-color: #ffffff;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1f2b48, #2c3e66);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    margin: 0.7rem 0 1.2rem 0;
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, #9b2c8c, #477bff, #9b2c8c);
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1f2b48;
+    margin-bottom: 1.2rem;
+}
+
+/* ГРУППА КНОПОК ДЛЯ ВЫБОРА */
+.options-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0 0.8rem;
+}
+
+.quiz-btn, .quiz-btn2, .quiz-btn3, .quiz-btn4 {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    font-family: inherit;
+    flex: 0 1 auto;
+}
+
+.quiz-btn:hover, .quiz-btn2:hover, .quiz-btn3:hover, .quiz-btn4:hover {
+    transform: scale(0.97);
+    filter: brightness(1.02);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* ПОЛЕ ВВОДА */
+.open-field-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin: 0.8rem 0;
+}
+
+.open-input {
+    flex: 2;
+    min-width: 200px;
+    padding: 0.85rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #cfdfed;
+    border-radius: 48px;
+    background: white;
+    transition: 0.2s;
+    font-family: inherit;
+    outline: none;
+}
+
+.open-input:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(118,75,162,0.2);
+}
+
+.submit-btn {
+    background: #2c7da0;
+    border: none;
+    padding: 0.85rem 1.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 48px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: inherit;
+}
+
+.submit-btn:hover {
+    background: #1f5e7e;
+    transform: scale(0.97);
+}
+
+.input-correct {
+    border: 2px solid #28a745;
+    background-color: #eaffea;
+}
+
+.input-wrong {
+    border: 2px solid #dc3545;
+    background-color: #fff0f0;
+}
+
+.feedback-message {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: #eef2fa;
+    color: #1e2a3e;
+    transition: 0.2s;
+}

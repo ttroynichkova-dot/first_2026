@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Викторина | Животные и растения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-bar">
+    <a href="index.html" class="nav-btn">🌌 Марс & Париж</a>
+    <a href="index2.html" class="nav-btn">🌊 Океаны & горы</a>
+    <a href="index3.html" class="nav-btn">⚡ Физика & химия</a>
+    <a href="index4.html" class="nav-btn active-nav">🐘 Животные & растения</a>
+</div>
+
+<div class="page active-page">
+    <div class="quiz-container">
+        <div class="quiz-section">
+            <h2>🐼 Биология: животные</h2>
+            <hr/>
+            <h3>Какое животное называют "кораблём пустыни"?</h3>
+            <div class="options-group">
+                <button class="quiz-btn4" data-correct="false">Кенгуру</button>
+                <button class="quiz-btn4" data-correct="true">Верблюд</button>
+                <button class="quiz-btn4" data-correct="false">Страус</button>
+                <button class="quiz-btn4" data-correct="false">Ящерица</button>
+            </div>
+            <div id="feedbackPage4_mc" class="feedback-message">🐫 Выберите вариант</div>
+        </div>
+
+        <div class="quiz-section">
+            <h2>🌿 Ботаника</h2>
+            <hr/>
+            <h3>Какое дерево считается символом России (с белой корой)?</h3>
+            <div class="open-field-group">
+                <input type="text" id="answerInput4" class="open-input" placeholder="Название дерева">
+                <button id="submitBtn4" class="submit-btn">🌳 Ответить</button>
+            </div>
+            <div id="feedback2_4" class="feedback-message">🍃 Напишите дерево</div>
+        </div>
+    </div>
+</div>
+
+<footer>✨ 4 интерактивные страницы | Проверяйте знания в увлекательной форме</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

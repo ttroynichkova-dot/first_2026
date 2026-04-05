@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Викторина | Океаны и горы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-bar">
+    <a href="index.html" class="nav-btn">🌌 Марс & Париж</a>
+    <a href="index2.html" class="nav-btn active-nav">🌊 Океаны & горы</a>
+    <a href="index3.html" class="nav-btn">⚡ Физика & химия</a>
+    <a href="index4.html" class="nav-btn">🐘 Животные & растения</a>
+</div>
+
+<div class="page active-page">
+    <div class="quiz-container">
+        <div class="quiz-section">
+            <h2>🌍 География: выбор ответа</h2>
+            <hr/>
+            <h3>Какой океан является самым большим по площади?</h3>
+            <div class="options-group">
+                <button class="quiz-btn2" data-correct="false">Индийский</button>
+                <button class="quiz-btn2" data-correct="true">Тихий</button>
+                <button class="quiz-btn2" data-correct="false">Атлантический</button>
+                <button class="quiz-btn2" data-correct="false">Северный Ледовитый</button>
+            </div>
+            <div id="feedbackPage2_mc" class="feedback-message">🌊 Нажмите на океан</div>
+        </div>
+
+        <div class="quiz-section">
+            <h2>🏔️ Свободный ответ</h2>
+            <hr/>
+            <h3>Назовите самую высокую горную вершину мира (выше 8000 м).</h3>
+            <div class="open-field-group">
+                <input type="text" id="answerInput2" class="open-input" placeholder="Ваш ответ">
+                <button id="submitBtn2" class="submit-btn">📌 Подтвердить</button>
+            </div>
+            <div id="feedback2_2" class="feedback-message">🏞️ Введите название горы</div>
+        </div>
+    </div>
+</div>
+
+<footer>✨ 4 интерактивные страницы | Проверяйте знания в увлекательной форме</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

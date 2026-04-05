@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Викторина | Красная планета и Париж</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-bar">
+    <a href="index.html" class="nav-btn active-nav">🌌 Марс & Париж</a>
+    <a href="index2.html" class="nav-btn">🌊 Океаны & горы</a>
+    <a href="index3.html" class="nav-btn">⚡ Физика & химия</a>
+    <a href="index4.html" class="nav-btn">🐘 Животные & растения</a>
+</div>
+
+<div class="page active-page">
+    <div class="quiz-container">
+        <div class="quiz-section">
+            <h2>Part 1: Multiple Choice</h2> 
+            <hr/>
+            <h3>Какая планета Солнечной системы называется "Красная планета"?</h3>
+            <div class="options-group">
+                <button class="quiz-btn" data-correct="false">Венера</button>
+                <button class="quiz-btn" data-correct="true">Марс</button>
+                <button class="quiz-btn" data-correct="false">Юпитер</button>
+                <button class="quiz-btn" data-correct="false">Сатурн</button>
+            </div>
+            <div id="feedback1" class="feedback-message">🔍 Нажмите на вариант ответа</div>
+        </div>
+       
+        <div class="quiz-section">
+            <h2>Part 2: Free Response</h2> 
+            <hr/>
+            <h3>Как называется столица Франции?</h3>
+            <div class="open-field-group">
+                <input type="text" id="answerInput1" class="open-input" placeholder="Введите ответ">
+                <button id="submitBtn1" class="submit-btn">✅ Подтвердить</button>
+            </div>
+            <div id="feedback2_1" class="feedback-message">✏️ Введите ответ и нажмите кнопку</div>
+        </div>
+    </div>
+</div>
+
+<footer>✨ 4 интерактивные страницы | Проверяйте знания в увлекательной форме</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
